@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="jayson_RAA" title="[JF] Restrict Animated Avatar" version_string="1.0.0" version_id="1" url="https://jaysonfong.me/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="load_class_model" execute_order="10" callback_class="jayson_RAA_Listener" callback_method="Listen" active="1" hint="XenForo_Model_Avatar" description="XenForo_Model_Avatar::applyAvatar"/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions>
+      <permission permission_group_id="avatar" permission_id="jayson_raa_use_animated" permission_type="flag" default_value="unset" interface_group_id="avatarPermissions" display_order="1"/>
+    </permissions>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="jayson_raa_cannot_use_animated" version_id="1" version_string="1.0.0"><![CDATA[You do not have permission to upload an animated avatar!]]></phrase>
+    <phrase title="permission_avatar_jayson_raa_use_animated" version_id="1" version_string="1.0.0"><![CDATA[Use Animated Avatar]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
